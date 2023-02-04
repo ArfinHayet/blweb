@@ -1,0 +1,271 @@
+:root {
+    --primary: #F67A3E;
+  }
+  
+  .navbar{
+      background-color: white;
+      box-shadow: 0px 1.5px 3px #ddd;
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+  .fullContainer{
+    margin:0px;
+    padding:0px;
+    background-color: #F4F6FA;
+  }
+  .avatar{
+    width:20px;
+    height:20px;
+    border-radius:100%;
+    background-color:green;
+  }
+  
+  .iconList{
+    width:30%
+  }
+  
+  .carousel{
+    padding: 20px;
+    overflow: auto;
+  }
+  .carousel-box{
+    background-color: #F4F6FA;
+    padding-bottom: 40px;
+  }
+  .carousel-inner{
+    border-radius: 15px !important;
+  }
+
+  .carousel-indicators button {
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 50%;
+    background-color:grey !important;
+    overflow: hidden !important;
+    perspective: 1px !important;
+  }
+
+  .carousel-indicators button.active {
+    width: 12px !important;
+    height: 8px !important;
+    background-color: var(--primary) !important;
+    border-radius: 42% !important;
+    overflow: hidden !important;
+    perspective: 1px!important;
+  } 
+
+
+/* 
+  .carousel-indicators .active::after {
+    border-radius: 5rem !important;
+  } */
+
+   
+  
+  
+  .carousel-inner img{
+    height:500px;
+  }
+  
+  
+  .scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+    padding-left: 20px;
+  }
+  
+  .scrollmenu a {
+    display: inline-block;
+    border: 1px solid var(--primary);
+    margin:5px;
+    border-radius:15px;
+    text-align: center;
+    color:#555;
+    padding: 8px 12px 8px 12px;
+    text-decoration: none;
+  }
+  
+  .scrollmenu a:focus{
+    background-color: var(--primary);
+    color:white;
+  }
+  .scrollmenu::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .scrollmenu {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  .slideBox::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .slideBox {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  
+  
+  .contentBox{
+    background-color:#FFFFFF;
+    margin: 20px;
+    padding: 10px;
+    border-radius:15px;
+  }
+  
+  .slideBox{
+    overflow:auto;
+    white-space: nowrap;
+  }
+  
+  .no-border{
+    border:none;  
+  }
+  
+  .menuIcon{
+    width:30px;
+    height: 30px;
+  }
+  
+  .productBox{
+    width:200px;
+    border-radius:15px;
+    border:1px solid #ddd;
+    overflow:hidden;
+    position: relative;
+    margin:4px;
+    display: inline-block;
+    text-decoration: none;
+    color:black;
+  }
+  .cartIcon{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color:#FE9900;
+    border-top-left-radius: 15px;
+  }
+  
+  .cartIcon img{
+    width:20px;
+  }
+  
+  .productBox img{
+    width: 100%;
+    height: 150px;
+  }
+
+  .productCover{
+    border-radius: 15px;
+    margin:20px;
+  }
+
+  .productMain{
+    height: 70vh;
+    overflow: auto;
+  }
+
+
+  .footerBar{
+    height: 10vh;
+    background-color: white; 
+  }
+
+  .cartBtn{
+    width : 100%;
+    border: none;
+    outline: none;
+    background-color: var(--primary);
+    border-radius: 10px;
+    padding:12px;
+    color:white;
+  }
+
+  .inputFrm{
+    border:1px solid #ddd;
+    padding:12px;
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  .successModal{
+    background-color:white;
+    position:fixed;
+    left:0px;
+    right:0px;
+    bottom: 0px;
+    height:0px;
+    transition: 0.5s;
+    z-index: 100;
+  }
+  .sactive{
+    height: 400px;
+    box-shadow: 0px 10px 20px grey;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .plusMinusBtn{
+    border: none;
+    outline: none;
+    background-color: var(--primary);
+    padding: 3px 8px 3px 8px;
+    margin: 3px; 
+    border: 1px solid var(--primary);
+  }
+
+  .lnk{
+    text-decoration: none;
+    color: #555;
+  }
+
+  .cartBox{
+    border:1px solid #ddd;
+    border-radius: 15px;
+    margin: 15px;
+    overflow: hidden;
+  }
+
+
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
+
+    .cusToast{
+      background-color: rgba(0,0,0,0);
+      width: 100%;
+      margin: auto;
+      position: fixed;
+      bottom:-100px;
+      left: 0px;
+      right:0px;
+      transition: 0.5s;
+    }
+
+    .cusToast-active{
+      bottom: 0px;
+    }
+
+    .toastBody{
+      background-color:var(--primary);
+      width: 70%;
+      margin: auto;
+      margin-bottom: 20px;
+      color: white;
+    }
